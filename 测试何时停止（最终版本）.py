@@ -40,7 +40,7 @@ driver = webdriver.Chrome(".\chromedriver_win32\chromedriver") #driver
 # url = driver.find_elements(By.CLASS_NAME, 'hfpxzc')
 # shop_link = url[0].get_attribute('href')
 
-# # 
+# # 需要人工操作的地方
 r = (10516-1) #门店几所在那行,即每家店的数据开始行，这里和下面一行url都要改，url在href属性中
 url='https://www.google.com/maps/place/Starbucks/data=!4m7!3m6!1s0x31da181708e5c9c3:0x12b5061eba19a057!8m2!3d1.3151237!4d103.8944134!16s%2Fg%2F11b6ck1zd5!19sChIJw8nlCBcY2jERV6AZuh4GtRI?authuser=0&hl=en&rclk=1'
 driver.get(url) #打开门店
