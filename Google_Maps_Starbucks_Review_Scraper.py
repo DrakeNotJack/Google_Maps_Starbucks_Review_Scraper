@@ -20,7 +20,7 @@ import xlutils.copy
 
 
 # # Open the first Worksheet
-excel_path = 'C:/Users/xieqi/Desktop/starbucks.xls' # The path of the Excel saved
+excel_path = 'OuputExcelPath.xls' # The path of the Excel saved
 open_file = xlrd.open_workbook(excel_path) # Open Excel file using xlrd mode
 file_copy = xlutils.copy.copy(open_file) # Create the copy of Excel file using xlutils mode
 sheet = file_copy.get_sheet(0) # Select the first Worksheet
