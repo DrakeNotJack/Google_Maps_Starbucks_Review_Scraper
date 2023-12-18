@@ -20,7 +20,7 @@ import xlutils.copy
 
 
 # # 创建Excel文件，打开第一张工作表
-excel_path = 'C:/Users/xieqi/Desktop/starbucks.xls' #Excel文件要保存在电脑上的路径
+excel_path = 'OuputExcelPath.xls' #Excel文件要保存在电脑上的路径
 open_file = xlrd.open_workbook(excel_path) #用xlrd模块打开Excel文件
 file_copy = xlutils.copy.copy(open_file) #用xlutils模块创建文件的复制
 sheet = file_copy.get_sheet(0) #选中Excel文件的第一张工作表，如果还未创建的话用add_sheet，如上
